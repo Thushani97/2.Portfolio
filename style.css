@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+    /* box-sizing: border-box; */
+    
+}
+/* .max-width{
+    margin: auto;
+    padding: 0 80px;
+    max-width: 1350px;
+} */
+
+
+.box-1{
+    
+    width: 850px;
+    height: 100vh;
+    background-image: url(images/mypic5.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    bottom: -100%;
+    right: 30%;
+    animation: anim 2s forwards,anim2 2s forwards 3s;
+}
+
+@keyframes anim {
+    from{
+        bottom: -100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+
+@keyframes anim2{
+    from{
+        right: 30%;
+        width: 530px;
+    }
+    to{
+        width: 0px;
+        right: 50%;
+    }
+}
+
+.box-1::after{
+    /* background: black; */
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    width: 850px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/mypic5-new.png);
+    right: 0;
+    z-index: -1;
+
+}
+
+.box-2{
+    
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    font-family: 'Poppins',sans-serif;
+    /* overflow: hidden; */
+}
+.box-2 .text{
+    position: relative;
+    right: -500%;
+    color: white;
+    background: transparent;
+    animation: anim3 2s forwards 4s;
+}
+.box-2 .text-1{
+    font-size: 40px;
+    text-align: center;
+}
+.box-2 .text-2{
+    font-size: 80px;
+    text-align: center;
+}
+.box-2 .text-3{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@keyframes anim3{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.box-3 .menu{
+    background: black;
+    font-family: 'Poppins',sans-serif;
+    color: #fd007f;
+    text-align: right;
+}
+
+
+.box-3 .container{
+    background: black;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    top: -100%;
+    animation: anim4 2s forwards 2.5s;
+}
+
+
+
+.menu{
+    font-size: 15px;
+    color: #fd007f;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-right: 150px;
+    margin-top: 20px;
+    float: right;
+}
+.menu ul{
+    list-style:none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 100px;
+}
+@keyframes anim4{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
+}
